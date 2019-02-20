@@ -1,0 +1,74 @@
+<div class="hamburger-nav">
+  <div class="logo-container">
+    <a href="#home"><img src="/assets/AEM proposed logo.png" alt="American Equities Mortgage" class="logo"></a>
+  </div>
+  <div class="toggle-menu">
+    <img src="/assets/hamburger-nav.png" alt="navigation" (click)="toggle()">
+    <div class="hidden-menu" *ngIf="show">
+      <div class="profile-container">
+        <div class="profile">
+          <p class="title">Your Mortgage Specialist:</p>
+          <div class="data">
+            <p>Camille Rubsamen</p>
+            <p class="nmls">NMLS ID 1814844</p>
+          </div>
+          <div class="buttons">
+            <a href="tel:8015509747"><button>call</button></a>
+            <a href="mailto:camiller@aemtexas.com?subject=Mortgage help" style="margin-left: 1vw;"><button>email</button></a>
+          </div>
+        </div>
+        <div class="profile-picture-container">
+          <img src="/assets/Camille.jpg" alt="Camille" class="profile-picture">
+        </div>
+      </div>
+      <hr>
+      <div class="menu-links">
+        <ul>
+          <a href="#home" (click)="toggle()"><li>Home</li></a>
+          <a href="#about" (click)="toggle()"><li>About</li></a>
+          <a href="#apply" (click)="toggle()"><li>Apply</li></a>
+          <a href="#login" (click)="toggle()"><li>Log In</li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navbar">
+  <div class="profile-container">
+    <div class="profile">
+      <p class="title">Your Mortgage Specialist:</p>
+      <div class="data">
+        <p>Camille Rubsamen</p>
+        <p style="font-size: 1.5vh;">NMLS ID 1814844</p>
+      </div>
+      <div class="buttons">
+        <a href="tel:8015509747"><button>call</button></a>
+        <a href="mailto:camiller@aemtexas.com?subject=Mortgage help" style="margin-left: 1vw;"><button>email</button></a>
+      </div>
+    </div>
+    <div class="profile-picture-container">
+      <img src="/assets/Camille.jpg" alt="Camille" class="profile-picture">
+    </div>
+  </div>
+  <div class="logo-container">
+    <a href="#home"><img src="/assets/AEM proposed logo.png" alt="American Equities Mortgage" class="logo" id="logo" style="height=15vh;"></a>
+  </div>
+  <div class="menu-container">
+    <div class="menu">
+      <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#apply"><li>Apply</li></a>
+        <a href="#login"><li>Log In</li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="footer">
+  <p class="copyright">&copy; American Equities Mortgage, LLC 2019</p>
+  <p class="ca" style="padding-right: 3vw;"><a href="http://www.nmlsconsumeraccess.org/">NMLS Consumer Access</a></p>
+  <p class="ca">NMLS ID 1833804</p>
+</div>

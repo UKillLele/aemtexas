@@ -1,0 +1,236 @@
+.navbar {
+  filter: drop-shadow(0 0 5px black);
+  background-color: white;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  display: inline-block;
+}
+.logo-container {
+  text-align: center;
+  display: inline-block;
+  width: 40vw;
+}
+.logo {
+  height: 13vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1vh;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  transition: 1s;
+}
+.logo-shadow {
+  height: 15vh;
+  border-radius: 10px;
+  padding: 1vh;
+  box-shadow: 5px 5px 5px gray;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+}
+.profile-container {
+  width: 30vw;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+.profile {
+  padding-left: 3vw;
+  display: inline-block;
+  vertical-align: top;
+}
+.title {
+  color: maroon;
+  font-weight: bold;
+  font-size: 2.5vh;
+  margin: 1vh 0vh;
+}
+.data {
+  font-size: 1.85vh;
+  display: inline-block;
+}
+.data p {
+  margin: 0px;
+}
+.nmls {
+  font-size: 1.5vh;
+}
+.buttons {
+  float: right;
+  display: inline-block;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+.buttons button {
+  color: white;
+  border-radius: 1vh;
+  background-color: maroon;
+  cursor: pointer;
+  border-color: maroon;
+  font-size: 2vh;
+  height: 3vh;
+}
+.profile-picture-container {
+  padding-left: 3vw;
+  display: inline-block;
+}
+.profile-picture {
+  margin-top: .5vh;
+  height: 9vh;
+  border-radius: 50%;
+}
+.menu-container {
+  width: 30vw;
+  text-align: right;
+  float: right;
+}
+.menu {
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+ul {
+  margin: 4vh auto;
+  padding: 0px;
+}
+li {
+  display: inline-block;
+  padding-right: 3vw;
+}
+a {
+  text-decoration: none;
+  color: maroon;
+}
+.hamburger-nav {
+  display: none;
+  height: 10vh;
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0 0 5px black;
+}
+.hidden-menu {
+  float: right;
+  background-color: #8B0304;
+  color: white;
+  position: absolute;
+  right: 0;
+}
+.hamburger-nav .logo-container {
+  float: left;
+  display: inline-block;
+  width: 45vw;
+}
+.hamburger-nav .logo {
+  height: 8vh;
+  top: 0;
+}
+.toggle-menu {
+  width: 45vw;
+  float: right;
+  display: inline-block;
+  top: 0;
+  text-align: right;
+  margin-top: -.5vh;
+}
+.hidden-menu .profile-container {
+  display: block;
+  width: 100vw;
+  height: 25vh;
+}
+.hidden-menu .profile {
+  float: left;
+  width: 57vw;
+}
+.hidden-menu .title {
+  color: white;
+  font-size: 4vh;
+}
+.hidden-menu .data {
+  display: block;
+  font-size: 3.5vh;
+}
+.hidden-menu .nmls {
+  font-size: 3vh;
+}
+.hidden-menu .buttons {
+  display: block;
+  float: left;
+}
+.hidden-menu .buttons button {
+  font-size: 3vh;
+  height: 4vh;
+}
+.hidden-menu .profile-picture-container {
+  width: 37vw;
+  float: right;
+}
+.hidden-menu .profile-picture {
+  height: 17vh;
+}
+.hidden-menu .menu-links {
+  display: block;
+  width: 100vw;
+}
+.hidden-menu a li {
+  display: block;
+  text-align: center;
+  font-size: 3vh;
+  color: white;
+  font-weight: bold;
+  padding: 2vh 0;
+  width: 100vw;
+}
+.hidden-menu a:hover {
+  background-color: #bb0000;
+}
+.toggle-menu img {
+  height: 6vh;
+  padding: 2vh 3vw;
+  cursor: pointer;
+}
+.footer {
+  bottom: 0;
+  text-align: center;
+  height: 5vh;
+  position: fixed;
+  width: 100vw;
+  background-color: maroon;
+  color: white;
+  box-shadow: 0 0 5px black;
+  font-size: 2vh;
+}
+.footer p, .footer a {
+  color: white;
+  display: inline-block;
+}
+.copyright {
+  float: left;
+  padding-left: 3vw;
+}
+.ca {
+  float: right;
+  padding-right: 3vw;
+}
+@media only screen and (max-width: 1394px) {
+  .hamburger-nav {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .footer {
+    height: 6vh;
+  }
+  .ca, .copyright {
+    float: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .copyright {
+    padding: .5vh 1vh .5vh 1vh;
+  }
+}

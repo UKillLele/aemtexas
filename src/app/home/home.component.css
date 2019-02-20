@@ -1,0 +1,46 @@
+.page {
+}
+.home, .about, .apply, .login {
+  height: 700px;
+  display: block;
+  padding-top: 5vh;
+}
+.home {
+  color: white;
+  background-image: url('/assets/keys.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.about {
+  color: maroon;
+  background-color: white;
+}
+.apply {
+  background-color: maroon;
+  color: white;
+}
+.login {
+  color: maroon;
+}
+h1 {
+  font-size: 7vh;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 6vh;
+  margin: 0px;
+}
+.tagline {
+  padding-left: 10vw;
+  text-shadow: 1px 1px 5px black;
+  font-size: 8vh;
+  padding-top: 150px;
+}
+.tagline p {
+  margin: 0px;
+}
+.about p, .apply p, .login p {
+  font-size: 5vh;
+  text-align: center;
+  margin-top: 10vh;
+}
