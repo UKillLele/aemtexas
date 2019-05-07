@@ -81,6 +81,7 @@
   margin-top: .5vh;
   height: 9vh;
   border-radius: 50%;
+    cursor: default;
 }
 .menu-container {
   width: 30vw;
@@ -209,9 +210,26 @@ a {
 .copyright {
   float: left;
   padding-left: 3vw;
+  display: flex;
+}
+.copyright p {
+  align-self: center;
 }
 .ca {
   float: right;
+  display: flex;
+}
+.ca p {
+  align-self: center;
+  padding-right: 3vw;
+}
+.ca a {
+  color: pink;
+  text-decoration: underline;
+}
+.eho {
+  height: 3vh;
+  align-self: center;
   padding-right: 3vw;
 }
 @media only screen and (max-width: 1394px) {
@@ -221,14 +239,24 @@ a {
   .navbar {
     display: none;
   }
-  .footer {
-    height: 6vh;
+  .profile-picture-container img {
+    cursor: default;
   }
-  .ca, .copyright {
-    float: none;
-    text-align: center;
-    padding: 0px;
+  .footer {
+    height: 22vw;
+    padding-left: 3vw;
+  }
+  .eho {
+    float: right;
+    height: 15vw;
+    margin-right: 3vw;
+  }
+  .ca p, .copyright p, .ca, .copyright {
+    float: left;
     margin: 0px;
+    display: block;
+    line-height: 5vw;
+    font-size: 4vw;
   }
   .copyright {
     padding: .5vh 1vh .5vh 1vh;
